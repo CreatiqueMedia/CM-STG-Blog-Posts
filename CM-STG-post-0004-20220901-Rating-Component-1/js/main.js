@@ -63,7 +63,7 @@ $("[id*=rating-btn-]").click(function () {
       break;
     case "rating-btn-5":
       $("input-box").val("You selected 5 out of 5");
-      $("#rating-btn-1").addClass("highlight-btn");
+      $("#rating-btn-5").addClass("highlight-btn");
       $(
         "#rating-btn-1, #rating-btn-2, #rating-btn-3, #rating-btn-4"
       ).removeClass("highlight-btn");
