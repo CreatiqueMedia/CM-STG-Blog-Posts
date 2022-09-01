@@ -1,0 +1,243 @@
+/* Style Guide */
+/*
+
+ # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+
+*/
+
+/* JavaScript/jQuery Usage */
+
+.highlight-btn {
+  background-color: var(--LightGrey)!important;
+  opacity: 1!important;
+}
+
+.path-btn-icon {
+  color: var(--White);
+}
+
+/* Universal Styles Go Here */
+
+:root {
+  --PrimaryColor: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --ParagraphFont: 15px;
+  --FontFamily: "Overpass", sans-serif;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--FontFamily);
+  font-size: var(--ParagraphFont);
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* Specific Styles Go Here */
+
+.form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--DarkBlue);
+  border-radius: 24px;
+  color: var(--White);
+  width: 25%;
+  padding: 24px;
+  min-width: 375px;
+  line-height: 2;
+  background: linear-gradient(180deg, rgb(42 45 56), rgb(25 29 39));
+}
+
+/* Section 1 */
+
+.form--container--sec--1--icon {
+  color: var(--PrimaryColor);
+  opacity: 1;
+}
+
+.form--container--sec--1--btn {
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+  background-color: var(--VeryDarkBlue);
+  margin: 0 0 24px 12px;
+  background: rgba(0,0,0,0.2);
+  border: none;
+}
+
+.form--container--sec--1--heading {
+  font-size: 24px;
+  margin: 0 0 24px 12px;
+}
+
+.form--container--sec--1--text {
+  color: var(--LightGrey);
+  margin: 0 0 24px 12px;
+}
+
+/* Section 2 */
+
+.form--container--sec--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form--container--sec--2--btn--1 {
+  border-radius: 50%;
+  height: 56px;
+  max-width: 100%;
+  background-color: var(--VeryDarkBlue);
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  margin: 0 32px 0 0;
+  padding: 24px;
+  margin: auto;
+}
+
+.form--container--sec--2--btn--1:hover {
+  background-color: var(--PrimaryColor);
+  opacity: 1;
+}
+
+.form--container--sec--2--btn--1:hover > .form--container--sec--2--icon {
+  color: var(--White);
+}
+
+.form--container--sec--2--btn--1:focus > .form--container--sec--2--icon {
+  color: var(--White);
+}
+
+.form--container--sec--2--icon {
+  color: var(--LightGrey);
+}
+
+/* Section 3 */
+
+.form--container--sec--3 {
+  margin: 24px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form--container--sec--3--btn--1 {
+  background-color: var(--PrimaryColor);
+  color: var(--White);
+  text-transform: uppercase;
+  border-radius: 24px;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 auto 0 auto;
+  max-width: 100%;
+  padding: 4% 40% 4% 40%;
+  cursor: pointer;
+}
+
+.form--container--sec--3--btn--1:hover {
+  background-color: var(--White);
+  color: var(--PrimaryColor);
+}
+
+/* Thank You Message Section */
+
+.form--thank--you--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--DarkBlue);
+  border-radius: 24px;
+  color: var(--White);
+  width: 25%;
+  min-width: 375px;
+  line-height: 2;
+  padding: 2%;
+  background: linear-gradient(180deg, rgb(42 45 56), rgb(25 29 39));
+}
+
+.form--thank--you--container--input {
+  background-color: var(--VeryDarkBlue);
+  border-radius: 24px;
+  border: none;
+  padding: 2%;
+  margin: 24px 0 24px 0;
+  opacity: 0.5;
+}
+
+.form--thank--you--container--text {
+  color: var(--LightGrey);
+  margin: 0 0 24px 12px;
+  text-align: center;
+}
+
+.form--thank--you--container--input {
+  color: var(--PrimaryColor);
+  text-align: center;
+}
+
+/* Footer Section */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+  margin: 24px 0 0 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

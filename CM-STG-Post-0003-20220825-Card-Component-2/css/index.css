@@ -1,0 +1,173 @@
+/* All Univesal Styling Goes At The Top! */
+
+:root {
+  --main-bg-color: hsl(30, 38%, 92%);
+  --section-2-bg-color: #fff;
+  --main-font: "Montserrat", sans-serif;
+  --section-2-font: "Fraunces", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: --main-font;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.1px);
+  margin: 0 1.5rem;
+}
+
+.section-2:first-child img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.section-2:last-child {
+  background-color: var(--section-2-bg-color);
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -1rem;
+}
+
+/* Then The Other Sections Next As The Classes Appear In The Markup By Order For Structure */
+
+/* Card Container Styling */
+
+.card-container {
+  max-width: 600px;
+}
+
+/* Section 1 Styling */
+
+.section-1-img_mobile {
+  height: 100%;
+}
+
+/* Section 2 Styling */
+
+.section-2-heading-1 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.section-2-heading-2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.section-2-text {
+  margin-bottom: 2rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+}
+
+.section-2-btn,
+.section-2-list-item {
+  font-family: inherit;
+}
+
+.section-2-price {
+  color: hsl(158, 36%, 37%);
+}
+
+.section-2-heading-2,
+.section-2-price {
+  font-family: var(--section-2-font);
+}
+
+.section-2-price-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-2-list-item:first-child {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.section-2-list-item:nth-child(2) {
+  color: hsl(228, 12%, 48%);
+}
+
+.section-2-btn {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.625rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2-btn:hover {
+  background-color: hsl(158, 38%, 20%);
+}
+
+.section-2-icon {
+  margin-right: 0.5rem;
+}
+
+/* Footer Styling */
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Responsive styling */
+
+@media (min-width: 640px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-container section:first-child img {
+    border-radius: 0.625rem 0 0 0.625rem;
+    width: 100%;
+  }
+
+  .card-container section:last-child {
+    border-radius: 0 0.625rem 0.625rem 0;
+    margin-top: 0;
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  .section-2-text {
+    margin-bottom: 1rem;
+  }
+}

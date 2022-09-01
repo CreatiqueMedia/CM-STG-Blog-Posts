@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/star-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/01e8e57ef1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      CreatiqueMedia | Ron The Web Dev | Post 0004-20220829 | Frontend Mentor |
+      Card Component 3 | Interactive Rating Component
+    </title>
+  </head>
+
+  <body>
+    <form action="" class="form--container" id="form">
+      <section class="form--container--sec--1">
+        <button class="form--container--sec--1--btn" disabled>
+          <i
+            class="fas fa-star fa-solid fa-lg form--container--sec--1--icon" id="sec-1-icon"
+            ic=""
+          ></i>
+        </button>
+
+        <h1 class="form--container--sec--1--heading">How did we do?</h1>
+        <p class="form--container--sec--1--text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <!-- Rating state start -->
+        <section class="form--container--sec--2">
+          <button
+            type="button"
+            class="form--container--sec--2--btn--1"
+            id="rating-btn-1"
+          >
+            <i class="fa-solid fa-1 form--container--sec--2--icon" id="btn-1-icon"></i>
+          </button>
+          <button
+            type="button"
+            class="form--container--sec--2--btn--1"
+            id="rating-btn-2"
+          >
+            <i class="fa-solid fa-2 form--container--sec--2--icon" id="btn-2-icon"></i>
+          </button>
+          <button
+            type="button"
+            class="form--container--sec--2--btn--1"
+            id="rating-btn-3"
+          >
+            <i class="fa-solid fa-3 form--container--sec--2--icon" id="btn-3-icon"></i>
+          </button>
+          <button
+            type="button"
+            class="form--container--sec--2--btn--1"
+            id="rating-btn-4"
+          >
+            <i class="fa-solid fa-4 form--container--sec--2--icon" id="btn-4-icon"></i>
+          </button>
+          <button
+            type="button"
+            class="form--container--sec--2--btn--1"
+            id="rating-btn-5"
+          >
+            <i class="fa-solid fa-5 form--container--sec--2--icon" id="btn-5-icon"></i>
+          </button>
+        </section>
+        <!-- Rating state end -->
+        <section class="form--container--sec--3">
+          <button 
+            type="button"
+            class="form--container--sec--3--btn--1"
+            id="form-submit-btn"
+          >
+            submit
+          </button>
+        </section>
+      </section>
+    </form>
+
+    <!-- Start Thank You Message Section -->
+
+    <section class="form--thank--you--container" id="thank-you">
+      <img
+        class="form--thank--you--container--img"
+        src="./assets/illustration-thank-you.svg"
+        alt="Thank You"
+      />
+      <input
+        class="form--thank--you--container--input"
+        type="text"
+        id="input-box"
+      />
+      <h1 class="form--thank--you--container--heading">Thank you!</h1>
+      <p class="form--thank--you--container--text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </section>
+
+    <!-- End Thank You Message Section -->
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.<br />Coded by
+        <a href="https://CreatiqueMedia.com"
+          >CreatiqueMedia LLC | Ron The Web Dev</a
+        >.
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

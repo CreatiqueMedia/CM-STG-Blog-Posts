@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Ron The Web Dev - jQuery - Show and Hide Content</title>
+  </head>
+  <body>
+    <h1 class="show--hide--content--heading">
+      Ron The Web Dev<br>Show and Hide Content Component<br>Using HTML, CSS (following BEM), and jQuery!
+    </h1>
+    <section class="show--hide--content--buttons--container">
+      <button class="show--hide--content--buttons" id="button-1">
+        Show Content #1
+      </button>
+
+      <button class="show--hide--content--buttons" id="button-2">
+        Show Content #2
+      </button>
+
+      <button class="show--hide--content--buttons" id="button-3">
+        Show Content #3
+      </button>
+
+      <button class="show--hide--content--buttons" id="button-4">
+        Show Content #4
+      </button>
+    </section>
+    <section class="show--hide--content--boxes--container">
+      <h1
+        class="show--hide--content--boxes--heading"
+        id="content-heading"
+      >
+        CLICK A BOX ABOVE TO SHOW CONTENT ASSOCIATED WITH THAT BUTTON HERE!
+      </h1>
+      <div
+        class="show--hide--content--boxes__show"
+        id="content-1"
+      >
+        <h2 class="show--hide--content--boxes--text">
+          Content Box 1
+        </h2>
+      </div>
+      
+      <div
+        class="show--hide--content--boxes__show"
+        id="content-2"
+      >
+          <h2 class="show--hide--content--boxes--text">
+            Content Box 2
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="show--hide--content--boxes__show"
+        id="content-3"
+      >
+        <h2 class="show--hide--content--boxes--text">
+          Content Box 3
+        </h2>
+      </div>
+
+      <div
+        class="show--hide--content--boxes__show"
+        id="content-4"
+      >
+        <h2 class="show--hide--content--boxes--text">
+          Content Box 4
+        </h2>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
