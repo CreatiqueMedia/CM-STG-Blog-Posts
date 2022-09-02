@@ -48,7 +48,7 @@ $("[id*=rating-btn-]").click(function () {
       });
       break;
     case "rating-btn-4":
-      $("input-box").val("You selected 4 out of 5");
+      $("#input-box").val("You selected 4 out of 5");
       $("#rating-btn-4").addClass("highlight-btn");
       $(
         "#rating-btn-1, #rating-btn-2, #rating-btn-3, #rating-btn-5"
@@ -62,7 +62,7 @@ $("[id*=rating-btn-]").click(function () {
       });
       break;
     case "rating-btn-5":
-      $("input-box").val("You selected 5 out of 5");
+      $("#input-box").val("You selected 5 out of 5");
       $("#rating-btn-5").addClass("highlight-btn");
       $(
         "#rating-btn-1, #rating-btn-2, #rating-btn-3, #rating-btn-4"
