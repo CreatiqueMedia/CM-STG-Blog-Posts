@@ -124,7 +124,7 @@ body {
   background-color: var(--PrimaryColorPaleBlue);
   border-radius: 12px;
   padding: 2%;
-  background-color: rgba(224, 232, 255, 0.3)
+  background-color: rgba(224, 232, 255, 0.3);
 }
 
 .card--sec--2--1--icon {
@@ -186,9 +186,7 @@ footer a {
   color: hsl(228, 45%, 44%);
 }
 
-/* Mobile Queries 
-
-(max-width: 600px) and (min-width: 400px)*/
+/* Mobile Queries */
 
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
   body {
