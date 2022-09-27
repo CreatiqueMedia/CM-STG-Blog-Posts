@@ -193,7 +193,6 @@ footer a {
 
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
   body {
-    background-color: var(--PrimaryColorPaleBlue);
     background-image: none;
   }
 }
